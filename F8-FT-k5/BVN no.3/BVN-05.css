@@ -1,0 +1,31 @@
+.t-center {
+    text-align: center;
+}
+.box {
+    display: flex;
+    color:whitesmoke;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    background-color: rgb(95, 82, 184);
+    height: 50px;
+    margin: 20px auto;
+}
+h1 {
+    font-weight: 200;
+}
+b {
+    color:deepskyblue;
+}
+.btn-info {
+    display: flex;
+    justify-content: center;
+}
+button {
+    height: 40px;
+    width: 150px;
+    color: whitesmoke;
+    background-color: black;
+    margin-right: 10px;
+    border-radius: 3px;
+}

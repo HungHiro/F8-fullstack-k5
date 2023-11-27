@@ -1,0 +1,20 @@
+.d-flex {
+    display: flex;
+}
+form {
+    width: 500px;
+}
+form > div {
+    display: flex;
+    margin-bottom: 10px;
+}
+.form-row-label {
+    width: 200px;
+}
+.button-form {
+    justify-content: center;
+}
+button {
+    margin-right: 5px;
+   border-radius:solid 2px grey; 
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>html form</h1>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+        <div>
+            <label for="name">Tên</label>
+            <input type="text" id="name" name="name" placeholder="Họ và tên ...">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email ...">
+        </div>
+        <div>
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" placeholder="Mật khẩu ...">
+        </div>
+        <div>
+            <label for="age">Tuổi</label>
+            <input type="number" id="age" name="age" placeholder="Tuổi ..." min="1" max="7" step="1">
+        </div>
+        <div>
+            <label for="avatar">Avatar</label>
+            <input type="file" id="avatar" name="avatar">
+        </div>
+        <div>
+            <label for="birthday">Ngày sinh</label>
+            <input type="date" id="birthaday" name="birthday">
+        </div>
+        <div>
+            <label for="color">Chọn màu</label>
+            <input type="color" id="color" name="color">
+        </div>
+        <div>
+            <label for="">Giới tính</label>
+            <label for="">
+                <input type="radio" value="male" name="gender" checked>
+                Nam
+            </label>
+            <label for="">
+                <input type="radio" value="female" name="gender">
+                Nữ
+            </label>
+            <label for="">
+                <input type="radio" value="unknown" name="gender">
+                Không xác định
+            </label>
+        </div>
+        <div>
+            <label for="">Bạn biết đến F8 qua nguồn nào</label>
+            <label for="">
+                <input type="checkbox" name="source" value="1">
+                GG
+            </label>
+            <label for="">
+                <input type="checkbox" name="source" value="2">
+                Youtube
+            </label>
+            <label for="">
+                <input type="checkbox" name="source" value="3">
+                Ngủ mơ
+            </label>
+        </div>
+        <div>
+            <label for="message">Tin nhắn</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Tin nhắn">Hello
+                hello
+            </textarea>
+        </div>
+        <div>
+            <label for="message">Tỉnh/Thành phố</label>
+            <select name="province" id="message">
+                <option value="">Chọn tỉnh/thành phố</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">HCMCity</option>
+                <option value="3" selected>Đà Nẵng</option>
+            </select>
+        </div>
+        <!-- Đăt name theo quy tắc viết thường và cách nhau bởi gạch dưới "_" 
+        'for' và "id" phải trùng nhau-->
+        <button type="button">Đăng ký</button>
+        <button type="reset">Nút nấu ăn</button>
+        <!-- reset là xóa hết những gì mà "người dùng" nhập vào => reset là đi nấu ăn liền -->
+    </form>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+        <div>
+            <input type="text" name="name" placeholder="Họ và tên..." required>
+        </div>
+        <!-- Required nên cẩn thận khi sử dụng do sẽ mang lại trải nghiệm éo tốt -->
+        <div>
+            <input type="email" name="email" placeholder="Email...">
+        </div>
+        <button style="display: none;"></button>
+        <!-- nếu nhiều trường thì k đc bỏ button nếu k sẽ k lấy đc dữ liệu do máy éo biết m nhập xong chưa -->
+    </form>
+</body>
+</html>
+<!-- Form là biểu mẫu
+tập hợp các tường (field) được nhóm trong cặp thẻ form
+khi gửi dữ liệu (submit), trình duyệt sẽ gửi dữ liệu của các field lên server
+1 trang web có thể có n form
+trong 1 form k có 1 form # -->

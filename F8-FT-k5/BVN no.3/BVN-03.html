@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-03-d3</title>
+    <link rel="stylesheet" href="./BVN_03.css">
+</head>
+<body>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="get">
+        <div class="d-flex">
+            <label class="form-row-label" for="name">Username</label>
+            <div>
+                <input type="text" id="name" name="Username">
+            </div>
+        </div>
+        <div class="d-flex">
+            <label class="form-row-label" for="password">Password</label>
+            <div>
+                <input type="password" id="password" name="password">
+            </div>
+        </div>
+        <div class="d-flex">
+            <label class="form-row-label" for="workplace">City of Employment</label>
+            <div>
+                <input type="text" id="workplace" name="Username">
+            </div>
+        </div>
+        <div class="d-flex">
+            <label class="form-row-label" for="server">Web server</label>
+            <div>
+                <select name="webserver" id="server">
+                    <option value="">-Choose a server-</option>
+                    <option value="1">server A</option>
+                    <option value="2">server B</option>
+                    <option value="3">server C</option>
+                </select>
+            </div>
+        </div>
+        <div class="d-flex">
+            <label class="form-row-label" for="">Please specify your role</label>
+            <div class="">
+                <label for="admin">
+                    <div>
+                        <input type="radio" id="admin" value="admin" name="role" checked>
+                        Admin
+                    </div>
+                </label>
+                <label for="engineer">
+                    <div>
+                        <input type="radio" id="engineer" value="engineer" name="role">
+                        Engineer
+                    </div>
+                </label>
+                <label for="manager">
+                    <div>
+                        <input type="radio" id="manager" value="manager" name="role">
+                        Manager
+                    </div>
+                </label>
+                <label for="guest">
+                    <div>
+                        <input type="radio" id="guest" value="guest" name="role">
+                        Guest
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="d-flex">
+            <label class="form-row-label" for="">Single Sign-on to the following</label>
+            <div>
+                <label for="check-mail">
+                    <div>
+                        <input type="checkbox" id="check-mail" name="source" value="1">
+                        Mail
+                    </div>
+                </label>
+                <label for="payroll">
+                    <div>
+                        <input type="checkbox" id="payroll" name="source" value="2">
+                        Payroll
+                    </div>
+                </label>
+                <label for="self-service">
+                    <div>
+                        <input type="checkbox" id="self-service" name="source" value="3">
+                        Self-service
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="button-form d-flex">
+            <button type="button">Login</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>

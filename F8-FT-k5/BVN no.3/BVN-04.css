@@ -1,0 +1,49 @@
+.d-flex {
+    display: flex;
+}
+nav {
+    width: 500px;
+    border: 1px solid orange;
+}
+button{
+    min-width: 20%;
+    height: 30px;
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: orange;
+    cursor: pointer;
+}
+button:focus ,button:hover {
+    color: white;
+    background-color: orange;
+}
+.f8-address {
+    background-color: #dfdfdf;
+    margin-top: 30px;
+}
+article {
+    margin: 30px;
+}
+h1 {
+    font-size: 40px;
+}
+p {
+    color: #6d6d6d;
+    width: 300px;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+    color: #6d6d6d;
+}
+a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+iframe {
+    width: 100%;
+}

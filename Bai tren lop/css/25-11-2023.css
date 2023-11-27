@@ -1,0 +1,29 @@
+#title-main {
+    color: red;
+}
+.sub-title {
+    color: rgb(255, 0, 0);
+}
+h2 {
+    color: blue;
+}
+/* thứ tự ưu tiên id => class => tag */
+.content > h3 {
+    color: aqua;
+}
+.products .title#featured {
+    font-size: 50px;
+}
+.box p ~ ul {
+    font-size: 50px;
+    color: rebeccapurple;
+}
+/* dấu "~" là lấy hết mấy cái đống đằng sau khi CÙNG cấp và CÙNG 1 cha*/
+.box p ~ div ul {
+    color: yellow;
+}
+/* Nhóm 2 selector bằng dấu "," 
+ví dụ:.box p ~ ul, .box p ~ div ul{
+    color: red
+}
+    */
