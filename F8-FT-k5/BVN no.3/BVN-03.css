@@ -2,7 +2,7 @@
     display: flex;
 }
 form {
-    width: 500px;
+    width: 600px;
 }
 form > div {
     display: flex;
@@ -16,5 +16,5 @@ form > div {
 }
 button {
     margin-right: 5px;
-   border-radius:solid 2px grey; 
+    border-radius:solid 2px grey; 
 }
