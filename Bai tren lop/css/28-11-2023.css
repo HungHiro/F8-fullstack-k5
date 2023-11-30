@@ -1,0 +1,44 @@
+/*   vd 1
+ .box h2 + h2 {
+    color: red;
+} */ 
+
+/* .links a[target]{
+    color: red;
+} */
+
+/* chọn thuộc tính vd như "target" thì chọn hết tất cả những thẻ có thuộc tính có target
+    viết thêm "target=..." thì chọn tất cả thẻ có target=... */
+/* .links a[href^="https://fullstack.edu.vn/"] {
+    color: red;
+} *
+
+/* dấu "^" gọi là biểu thức chính quy chọn tất cả từ bắt đầu*/
+/* .links a[href*="fullstack.edu.vn"] {
+    color: red;
+} */
+
+/* dấu "*" thì chọn nội dung có đoạn đó là sẽ nhận hết */
+/* .links a[title~="đốm"] {
+    color: red;
+} */
+
+/* .links a[href$=".vn/"] {
+    color: red;
+}
+[class^="col-"] {
+    color: yellow;
+} */
+
+/* * {
+    color: red;
+} */
+/* dấu "*" đại diện cho tất cả các css selector ngang cấp trở xuống */
+
+/* ul > * {
+    color: red;
+} */
+
+.col-1 > p i + a {
+    color: red;
+}

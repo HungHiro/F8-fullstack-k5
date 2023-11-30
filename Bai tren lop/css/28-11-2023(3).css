@@ -1,0 +1,45 @@
+/*  Cấu trúc 
+    selector:pseudo_class {
+    
+    }
+    1. active, focus, hover
+    
+    2. */
+/* .title:hover {
+    color: red;
+}
+.btn:active {
+    color: yellowgreen;
+}
+.btn:focus {
+    color: brown;
+}
+.field-name:focus::placeholder {
+    color: red;
+}
+
+
+.chekbox input:checked + span {
+    color: red;
+}
+.chekbox input[disabled] + span{
+    color: greenyellow;
+}
+
+.chekbox div:not(.ignore-item) span {
+    color: red;
+} */
+
+
+/* .product h2:first-child {
+    color: red;
+}
+.product h2:last-child {
+    color: yellowgreen;
+} */
+.product h2:first-of-type {
+    color: red
+}
+.product h2:last-of-type {
+    color: red;
+}

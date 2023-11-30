@@ -1,0 +1,143 @@
+.d-flex {
+    display: flex;
+}
+section {
+    width: 100%;
+    height: 1000px;
+    background-color: #F4F4F4;
+}
+/* Header */
+h1 {
+    font-size: 36px;
+    justify-content: center;
+    margin-bottom:50px;
+    margin-top: 0;
+    padding-top: 15px;
+}
+.product-list {
+    justify-content: center;
+}
+.btn-nav {
+    background-color: #FFFFFF ;
+    color: #5a5a5a;
+    height: 42px;
+    padding: 0 20px;
+    border: none;
+    margin-right: 2px;
+    cursor: pointer;
+}
+.btn-nav:hover, .btn-nav:focus {
+    background-color: #28388D;
+    color: #FEFEFE;
+}
+
+/* Products */
+.products {
+    width: 1200px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.products-row {
+    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+.product-column {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 16.6667%;
+}
+.product-item {
+    background-color:white;
+    position: relative;
+    cursor: pointer;
+}
+.product-img {
+    width: 100%;
+    height: 255px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-img-first {
+    width: 100%;
+    height: 255px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+.product-img-second {
+    width: 100%;
+    height: 255px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.product-img-first:hover {
+    opacity: 0;
+}
+.product-img-first:hover .product-img-second{
+    opacity: 1;
+}
+
+/* BTN on img*/
+
+.btn-product-img {
+    position: absolute;
+    top: 173px;
+}
+button {
+    cursor: pointer;
+}
+.btn-like {
+    width: 42px;
+    height: 36px;
+    background-color: #28388D;
+    color: #FEFEFE;
+    border: none;
+    margin:0 12px;
+}
+.btn-transfer {
+    width: 42px;
+    height: 36px;
+    background-color: #28388D;
+    color: #FEFEFE;
+    border: none;
+    margin:0 12px;
+}
+.btn-all-img {
+    width: 42px;
+    height: 36px;
+    background-color: #28388D;
+    color: #FEFEFE;
+    border: none;
+    margin:0 12px;
+}
+.btn-product-add {
+    width: 100%;
+    height: 36px;
+    border: none;
+    margin-top: 10px;
+    background-color: #28388D;
+    color: #FEFEFE;
+}
+
+/*  */
+
+.product-rate {
+    justify-content: center;
+    margin-top: 30px;
+    color:#F5C242 ;
+    font-size: smaller;
+}
+h4 {
+    padding-left: 10px;
+    margin: 15px auto;
+}
+.product-price {
+    justify-content: center;
+    font-weight: 700;
+}
