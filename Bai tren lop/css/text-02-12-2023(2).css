@@ -1,0 +1,30 @@
+/* Các đơn vị trong css
+    Đơn vị tuyệt đối:
+    - Pixel (px)
+    - point (pt) (1pt = 1.3px)
+    
+    Đơn vị tương đối:
+    - em --> tương đối với thành phần cha
+    - rem --> tương đối với mặc định trình duyệt (trình duyệt hiện tại thường là 16px nhưng có thể sửa bằng cách set cho thẻ html font-size: $$px)
+    - % --> tương đối với thành phần cha
+    - vw
+    - vh
+    --> vw, vh học ở thuộc tính wifth, height
+    font-size: thuộc tính về cỡ chữ
+    font-size: giá trị + đơn vị*/
+
+    html {
+        font-size: larger;
+    }
+    .home {
+        font-size: 30px;
+    }
+    .home p {
+        font-size: 2em;
+        /*tương đương: font-size: 60px;
+        font-size: 200% */
+    }
+    .home span {
+        font-size: 2em;
+        color: red;
+    }

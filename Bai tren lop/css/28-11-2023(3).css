@@ -37,9 +37,13 @@
 .product h2:last-child {
     color: yellowgreen;
 } */
-.product h2:first-of-type {
-    color: red
+/* .product h2:first-of-type {
+    color: rgb(255, 0, 0)
 }
 .product h2:last-of-type {
+    color: red;
+} */
+
+h4:nth-of-type(2n+1) {
     color: red;
 }

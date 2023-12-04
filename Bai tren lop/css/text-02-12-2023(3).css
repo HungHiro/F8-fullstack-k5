@@ -1,0 +1,50 @@
+/* thay đổi font chữ cho văn bản
+font-family: tên-font
+serif: họ font có chân
+sans-serif: họ font k chân */
+
+/* @font-face {
+    font-family: F-box;
+    src: url(../fonts/SVN-Fontbox-Boathouse-Filled.otf);
+} */
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato/Lato-ThinItalic.ttf);
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato/Lato-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato/Lato-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+/* h1 {
+    font-family: "Lato", serif;
+    font-weight: 400;
+} */
+p {
+    /* font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: oblique; */
+    font-family: 'Roboto', sans-serif;
+}

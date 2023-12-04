@@ -1,0 +1,34 @@
+/* COLOR: thay đổi màu chữ
+color: value
+- Tên màu
+- Mã màu
+- rgb
+- hls
+Color Opacity: độ mờ màu
+opacity : value
+Color Transparent
+
+Các giá trị mặc định trong tất cả các thuộc tính css
+- initial: giá trị mặc định của trình duyệt
+- inherit: kế thừa thằng Element cha
+
+ */
+.home {
+    background-color: black;
+    opacity: 0.3;
+} 
+.title {
+    color: yellowgreen;
+}
+.title:hover {
+    color: initial;
+}
+.sub-title {
+    color: #C40D9D   ;
+}
+.text-1 {
+    color: rgba(255, 99, 71, 0.5);
+}
+.text-2 {
+    color: rgba(255, 99, 71);
+}
