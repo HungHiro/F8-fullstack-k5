@@ -1,0 +1,20 @@
+/*  background color thể hiện các giá trị màu (tên màu, mã màu hexa, rgb, rgba, hsl,...)
+     -background-image: thiết lập ảnh nền
+     -background-repeat: thiết lập chế độ lặp
+     -background-position: thiết lập vị trí ảnh nền(mặc định là lèt top)
+     -background-size: điều chỉnh size background-img
+     -background: thuộc tính thổng hợp : color image position/size repeat attachment*/
+.box {
+    /* background-image: url(https://fastly.picsum.photos/id/935/500/400.jpg?hmac=0EAMbnSiQRuSifjZ46lpSxBzSmXD1TtCMQSnu64GIuw);
+    font-size: 48px;
+    color: white;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+    background-attachment: fixed;
+}
+    có thể viết tắt như sau */
+    font-size: 32px;
+    background: yellowgreen url(https://fastly.picsum.photos/id/888/2160/1080.jpg?hmac=JCRGV1FhIPa38umX4mQEMr0qSbLliP4KvpeFHTxzdPc) no-repeat left top / 100% auto fixed;
+}

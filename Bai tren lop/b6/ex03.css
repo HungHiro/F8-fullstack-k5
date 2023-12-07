@@ -1,0 +1,35 @@
+/*  đơn vị:
+    vw: viewport width
+    vh: viewport height
+    k dùng cho các thẻ inline trừ các thẻ inline-replace và các thẻ liên quan đến form
+
+    min/max-width: 
+    min/max-height:
+*/
+body {
+    height: 2000px;
+    width: 2000px;
+}
+.main {
+    height: 300px;
+    width: 400px;
+    background-color: yellow;
+}
+.box {
+    width: 50%;
+    height: 100vh;
+    background: gainsboro;
+}
+.img {
+    width: 300px;
+    border: 1px solid red;
+}
+.img:hover {
+    /* opacity: 0.3; */
+    filter: blur(10%);
+}
+.img .ex-img {
+    max-width: 100%;
+    min-width: 80%;
+}
+ 
