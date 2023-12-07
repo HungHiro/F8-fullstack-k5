@@ -67,6 +67,7 @@ p, a, u, li, h2 {
     border-radius: 3px;
     border: none;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .link-social {
     display: flex;
