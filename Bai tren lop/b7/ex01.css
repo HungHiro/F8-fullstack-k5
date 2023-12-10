@@ -1,0 +1,37 @@
+/* Overflow sẽ xử lí những nội dung bị tràn khung
+    - Giữ nguyên (visible)
+    - Ẩn đi (hidden)
+    - Tạo thanh cuộn (scroll, auto)
+    - 
+ */
+.box {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.box p {
+    width: 400px;
+}
+
+/* Padding là vùng đệm css
+    - với thẻ block thì padding đc 4 chiều trên dưới trái phải
+    - với thẻ inline thì padding được có 2 chièu trái phải thôi
+    - padding nằm trong border 
+    Margin tương tự Padding
+*/
+.box-2 {
+    width: 100px;
+    /* height: 100px; */
+    border: 1px solid red;
+    padding: 20px 40px;
+}
+
+.lists span {
+    display: inline-block;
+    border: 1px solid yellowgreen;
+    padding: 20px 30px;
+}

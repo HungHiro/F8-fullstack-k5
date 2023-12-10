@@ -1,0 +1,44 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.box {
+    width: 400px;
+    height: 300px;
+    background-color: rebeccapurple;
+    color: #FFFFFF;
+}
+.box h2 {
+    padding: 50%;
+}
+.box .content {
+    padding-top: 25%;
+    /* padding, margin tỉ lệ % thì theo width hết => thay đổi width thì pad tự thay đổi */
+}
+
+
+.box-2 {
+    width: 50%;
+    /* height: 200px; */
+    /* background-color: green;
+    color: #FFFFFF; */
+    margin: 30px;
+    /* padding: 30px; */
+    border: 1px solid red;
+    font-size: 0;
+}
+
+/* Box-sizing: kích thước của 1 box theo cái gì
+    - Mặc định theo content
+    - border-box: theo border */
+
+.box-2 .col {
+    width: calc(100%/ 3 - 20px);
+    display: inline-block;
+    font-size: initial;
+    justify-content: space-between;
+    background-color: yellow;
+    border: 1px solid #FFFFFF;
+    padding: 10px 20px;
+}

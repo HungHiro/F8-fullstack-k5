@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.box {
+    width: 400px;
+    border: 1px solid red;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.box .col-1 {
+    background-color: rgba(0, 128, 0, 0.447);
+    color: #FFFFFF;
+    width: 100px;
+    height: 150px;
+    float: left;
+}
+.box .col-2 {
+    background-color: rgba(255, 0, 0, 0.462);
+    color: #FFFFFF;
+    width: 150px;
+    height: 100px;
+    float: left;
+}
+/* Float là thuộc tính làm trôi các thành phần về bên trái or phải của thành phần cha
+    - none
+    - left
+    - right */
+.box p:first-of-type {
+    background-color: yellow;
+    clear: both;
+    width: 150px;
+    height: 30px;
+}
+.box p:last-child {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 20px;
+}
+
+.page {
+    overflow: hidden;
+    width: 500px;
+    border: 1px solid red;
+}
+.page img {
+    border-radius:50%;
+    shape-outside: circle();
+    margin-right: 10px;
+    float: left;
+}
+.page p {
+    clear: both;
+}

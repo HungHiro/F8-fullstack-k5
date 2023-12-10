@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container {
+    font-family: "Asap", sans-serif;
+    background-color: #F4F2F0;
+    padding: 15px 5%;
+}
+.title {
+    position: relative;
+    margin-bottom: 20px;
+}
+.title h2 {
+    width: 40%;
+    font-size: 28px;
+
+}
+.title hr {
+    position: absolute;
+    border-color: rgba(241, 241, 241, 0.6);
+    width: 60%;
+    top: 50%;
+    left: 40%;
+}
+
+/* BTN */
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.btn-local {
+    width: 11.5%;
+    height: 64px;
+    color: #3f3424;
+    background-color: #bebebe;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 32px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.btn-local span i {
+    font-weight: 300;
+    font-size: 14px;
+}
+.btn-local:hover, .btn-local:focus {
+    background-color: #AF7B37;
+    color: white;
+}
+/* Img-Local */
+.img-local-grid {
+    width: 100%;
+    margin: 0 auto;
+}
+.img-local-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+}
+.img-address {
+    display: flex;
+    width: 32%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-image: url(https://fastly.picsum.photos/id/865/700/400.jpg?hmac=5vYdbJyLqZ1RGUo0v3ggsEKOFOTM18xTZyvQTZ39hMY);
+    background-size: cover;
+    border-radius: 5px;
+    color: #F4F2F0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+}
+.img-address h3 {
+    font-size: 24px;
+}
+.land-sale {
+    font-weight: 200;
+}
+.land-sale span {
+    font-weight: 600;
+}

@@ -1,0 +1,44 @@
+/*  padding và margin đương nhiên có thuộc tính mở rộng như left right top bottom
+    vd : padding-left */
+.box {
+    padding: 20px;
+    border: 1px solid red;
+    width: 200px;
+    margin-left: auto;
+    margin: 0 auto;
+    /* margin-inline: auto; */
+}
+
+/* reset CSS */
+ * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+ }
+ .content h2 {
+    width: 100px;
+    /* height: 100px; */
+    
+    padding: 20px 40px;
+}
+.content h2:first-child {
+    border: 1px solid red;
+    margin-bottom: -10px;
+}
+.content h2:last-child {
+    border: 1px solid yellow;
+    margin-top: -20px;
+}
+/* Nhìn thì tưởng 2 cái cộng vào nhưng éo, nó sẽ lấy cái nào lớn hơn nên 2 cái sẽ cách nhau 20px
+     */
+.content-2 {
+    background-color: green;
+    width: 80%;
+    margin: 0 auto;
+    color: #FFFFFF;
+    border: 1px solid red;
+    padding: 30px auto;
+}
+.content h2 {
+    margin: 30px 0;
+}
