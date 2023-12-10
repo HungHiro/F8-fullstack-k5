@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Asap';
-    src: url(/F8-FT-k5/BVN-no.7/font/Asap/Asap-VariableFont_wdth\,wght.ttf) format('truetype');
+    src: url(../font/Asap/Asap-VariableFont_wdth\,wght.ttf) format('truetype');
     font-style: normal;
 }
 @font-face {
     font-family: 'Asap';
-    src: url(/F8-FT-k5/BVN-no.7/font/Asap/Asap-Italic-VariableFont_wdth\,wght.ttf) format('truetype');
+    src: url(../font/Asap/Asap-Italic-VariableFont_wdth\,wght.ttf) format('truetype');
     font-style: italic;
 }
 @font-face {
     font-family: 'SFU';
-    src: url(/F8-FT-k5/BVN-no.7/font/SFUTradeGothic-BoldCondensedTwenty.woff2) format('woff2');
+    src: url(../font/SFUTradeGothic-BoldCondensedTwenty.woff2) format('woff2');
 }
