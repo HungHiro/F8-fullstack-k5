@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box {
+    border: 1px solid red;
+    margin: 30px auto;
+    width: 400px;
+}
+
+.box ul {
+    list-style: none;
+}
+.box ul li {
+    line-height: 1.5;
+}
+.box ul li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://fastly.picsum.photos/id/846/20/20.jpg?hmac=Wllf2q9k7hirNq3P7qdGkekk9k-WiW3NZfNq8QeJ-q0);
+    margin-right: 10px;
+    background-size: 20px;
+    vertical-align: text-bottom;
+    border-radius: 50%;
+}
+.box ul li:hover::before {
+    background-image: url(https://fastly.picsum.photos/id/506/200/200.jpg?hmac=dqBtp4Vb--C6IUQzyxIaGU15obUuVWySoqiM6c-3Pm8);
+}
+.content {
+    height: 300px;
+    background-color: yellow;
+    color: white;
+    text-align: center;
+    display: table-cell;
+    width: 100%;
+    vertical-align: text-bottom;
+}

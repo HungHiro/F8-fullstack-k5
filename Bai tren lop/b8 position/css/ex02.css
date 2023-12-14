@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.modal .modal-content{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5%;
+    background-color: #ffffff;
+    z-index: 500;
+    border: 1px solid red;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+}
+.modal .modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.5);
+}

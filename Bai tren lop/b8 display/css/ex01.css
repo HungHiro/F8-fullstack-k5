@@ -1,0 +1,32 @@
+/* Display : thay đổi giá trị hiển thị của 1 thẻ html
+    - block => chuyển element thành block
+    - inline => chuyển element thành inline
+    - inline-block => chuyển element thành dạng inline-block (đáp ứng cả inline và block)
+    - none => ẩn mất cả không gian
+
+   Các giá trị mở rộng (Chuyên đề riêng)
+    - flex
+    - inline-flex
+    - grid
+    - list-item
+    - table
+    - table-cell
+    ... 
+    */
+.title {
+    display: inline;
+}
+.title:hover {
+    visibility: hidden;
+}
+.links {
+    display: flex;
+}
+.link {
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: yellowgreen;
+    display: inline-block;
+    
+}

@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section {
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;  
+}
+
+/* Header */
+.header {
+    text-align: center;
+}
+.header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.header .slogan {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: rgb(114, 114, 114);
+}
+
+/* Contents */
+.contents {
+    width: 100%;
+    padding: 0 10%;
+    margin: 0 auto;
+}
+.contents-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 15px;
+}
+.contents-column {
+    width: calc(100%/3 - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.product-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    background-image: url(https://fastly.picsum.photos/id/816/200/200.jpg?hmac=ZNsj0gw4AJtSDA82gMxujRjh3_5ZHoVje8CtZopmcz4);
+    margin-bottom: 20px;
+}
+.product-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.contents-column p {
+    font-size: 16px;
+    color: rgb(113, 113, 113);
+    padding: 20px;
+    line-height: 1.5;
+}
+.contents-column .product-btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #28378D;
+    color: white;
+    cursor: pointer;
+}
