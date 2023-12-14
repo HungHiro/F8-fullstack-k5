@@ -27,7 +27,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* Form */
-form {
+.ads {
     display: none;
 }
 .shopping-cart {
@@ -240,6 +240,6 @@ form {
     z-index: 90;
     background-color: rgba(0, 0, 0, 0.548);
 }
-#open-shopping-cart:checked + form {
+#open-shopping-cart:checked + .ads {
     display: block;
 }
