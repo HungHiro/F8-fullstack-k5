@@ -1,0 +1,67 @@
+.container {
+    max-width: 920px;
+    @apply w-full flex flex-col items-center justify-center gap-10 m-auto min-h-[100dvh];
+  }
+  .input-template {
+    @apply relative w-full;
+    .text-field {
+      border:1px solid #e3f2fd;
+      outline: none;
+      @apply relative shadow-none rounded-[5px] px-[15px] pt-[13px] pb-[13px] w-[inherit] leading-[100%];
+      @extend .animation-input-template;
+      &:hover {
+        border:1px solid #0d47a1;
+      }
+      &:focus, &:valid {
+        border:1px solid #0d47a1;
+        @apply pt-[20px] pb-[5px];
+      }
+      &:focus ~ .placeholder, &:not(:focus):valid ~ .placeholder {
+       @apply text-[12px] leading-[100%] top-[7px];
+      }
+      &.text-area-field:focus {
+        @apply pt-[20px] pb-[6px];
+      }
+      &.text-area-field:focus ~ .placeholder {
+        &:after {
+          @apply absolute content-[''] w-full h-[7px] left-0 -top-1.5;
+          background: white;
+        }
+      }
+    }
+    .placeholder {
+      @apply absolute z-[1] bg-white text-[#A9A9A9] text-sm px-[5px] py-0 left-2.5 top-[13px];
+      @extend .animation-input-template;
+    }
+    &__label {
+      @apply w-full;
+    }
+  }
+  .select-template {
+    border:1px solid #e3f2fd;
+    outline: none;
+    @apply relative w-full shadow-none rounded-[5px] leading-[100%] text-[14px] text-[#a9a9a9];
+    @extend .animation-input-template;
+      @apply h-full w-full px-[10px] pt-[13px] pb-[13px];
+      appearance: none;
+      background-image: url('@/assets/icons/arrow-down.svg');
+      background-repeat: no-repeat;
+      background-position: right 0.7rem top 50%;
+      background-size: 0.65rem auto;
+      &:focus, &:hover {
+        border:1px solid #0d47a1 !important;
+    }
+  }
+  .animation-input-template {
+    transition: ease-in-out 0.2s all;
+    -webkit-transition: ease-in-out 0.2s all;
+    -moz-transition: ease-in-out 0.2s all;
+    -o-transition: ease-in-out 0.2s all;
+  }
+  .btn-submit {
+    @apply px-8 py-4 rounded-[40px] bg-[#0d47a1] w-fit m-auto;
+    @apply font-bold text-white text-[16px];
+    &:hover, &:focus {
+      @apply opacity-[0.8];
+    }
+  }

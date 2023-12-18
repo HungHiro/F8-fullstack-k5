@@ -1,0 +1,22 @@
+.icons {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.box h2:nth-child(1):before {
+    content: '\f09a' ' ';
+    font-family: 'Font Awesome 6 Brands';
+}
+.box h2:nth-child(2):before {
+    content: '\e61b' ' ';
+    font-family: 'Font Awesome 6 Brands';
+}
+.box h2:nth-child(3):before {
+    content: '\f16d' ' ';
+    font-family: 'Font Awesome 6 Brands';
+}

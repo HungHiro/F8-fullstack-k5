@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+.grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+.grid-columns {
+    width: calc(100%/3 - 10px);
+    aspect-ratio: 1/1;
+    background-image: url(https://fastly.picsum.photos/id/312/500/500.jpg?hmac=ys8eh5ivAo4J0awMCxsFTTLa_VbjlbMbNztZmKkc_eg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid rgb(151, 151, 151);
+}
+.grid-columns:hover .background-opa {
+    background-color: rgba(162, 112, 90, 0.8);
+    transition: linear 0.7s;
+}
+.grid-columns:hover .column-icon {
+    font-size: 0;
+}
+.grid-columns:hover .column-content {
+    border: 1px solid rgb(196, 196, 196);
+}
+.grid-columns:hover .column-content p {
+    color: rgb(186, 186, 186);
+}
+.grid-columns:hover .btn-next {
+    display: block;
+    transition: linear 0.7s;
+}
+.background-opa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.column-content {
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    padding: 30px;
+    position: relative;
+
+}
+.column-content .column-icon {
+    font-size: 48px;
+    color: #A26F5A;
+    margin-bottom: 20px;
+    transition: font-size 0.7s;
+}
+.column-content h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+.column-content p {
+    font-size: 20px;
+    color: rgb(81, 81, 81);
+}
+.btn-next {
+    display: none;
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+    cursor: pointer;
+}
+.btn-next span {
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+.btn-next i {
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    padding: 4px;
+    border: 1px solid white;
+}
+.btn-next:hover i {
+    background-color: white;
+    color: #A26F5A;
+    transition: linear 0.4s;
+}
