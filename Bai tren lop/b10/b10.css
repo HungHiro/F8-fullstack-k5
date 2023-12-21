@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.logo {
+    /* margin: 0 auto; */
+    display: flex;
+    /* width: 800px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid red;
+    gap: 10px;
+}
+.logo img {
+    display: block;
+    max-height: 50px;
+    border: 5px solid green;
+    margin: 5px;
+}

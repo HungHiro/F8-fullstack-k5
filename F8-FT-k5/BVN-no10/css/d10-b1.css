@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+a:visited {
+    color: #31A8F7;
+}
+/* Background */
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #31A8F7;
+    z-index: -1;
+}
+.background-nav {
+    position: fixed;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: -1;
+    top: -150px;
+    left: -150px;
+    transition: 0.3s;
+}
+
+/* Nav */
+.burger-menu {
+    width: 400px;
+    padding: 30px 0;
+    color: #31A8F7;
+}
+.burger-menu .menu-icons {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.menu-icons label {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.menu-icons label i {
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+}
+.asd {
+    display: none;
+}
+.burger-menu .asd .list-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+.list-content button {
+    display: flex;
+    padding: 15px 75px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    color: #31A8F7;
+    cursor: pointer;
+}
+/* .list-content a:active, .list-content a:hover {
+    background-color: #F1EFF1;
+    color: #204162;
+} */
+#checkin:checked ~ .asd {
+    display: block;
+}
+.menu-icons label i:nth-child(1) {
+    transform: rotate(0deg);
+}
+#checkin:checked ~ .menu-icons label i:nth-child(1) {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+.menu-icons label i:nth-child(2) {
+    transform: rotate(0deg);
+    opacity: 0;
+}
+#checkin:checked ~ .menu-icons label i:nth-child(2) {
+    transform: rotate(180deg);
+    opacity: 1;
+}
+#checkin:checked ~ .background-nav {
+    width: 3000px;
+    height: 3000px;
+    transition: 0.4s;
+    border-radius: 0;
+}
+button:focus, button:hover {
+    background-color: #F1EFF1;
+    color: #204162;
+}
