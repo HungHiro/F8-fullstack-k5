@@ -1,0 +1,40 @@
+/* transform: thay đổi hình dạng của 1 khối html 
+    - xoay:
+        + angle
+        + rotateX
+        + rotateY
+    - phóng to thu nhỏ
+        + scale/scale(X, Y)
+        + scaleX/scaleY
+    - nghiêng:
+        + skew
+        + skewX
+        + skewY
+    - di chuyển
+   
+*/
+.wrap {
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s linear;
+}
+.wrap:hover .box {
+    /* transform: rotateX(3600deg) rotateY(3600deg); */
+    /* transform: rotate(3600deg) scale(2); */
+    transform: skew(91deg);
+    scale: 1.5;
+}

@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.grid {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
