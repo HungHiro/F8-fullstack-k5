@@ -2,11 +2,8 @@
 header {
     width: 100%;
     margin-top: 40px;
-    background-color:rgba(0, 0, 255, 0.154);
 }
-/* .logo {
 
-} */
 
 
 /* Nav bar */
@@ -42,6 +39,7 @@ header {
     position: relative;
     background-color: white;
     border-radius: 8px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.04);
 }
 .search-input input {
     font-size: 18px;
