@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* background gradient
+    - linear-gradient: xuất phát từ 1 phía (% sau mã màu là điểm dừng màu)
+        + to right
+        + to left
+        + to bottom
+        + to top
+        + to bottom right
+        + to bottom left
+        + to top left
+        + to top right
+        + angle (ví dụ: 270deg)
+    - radial-gradient: xuất phát từ tâm (% sau mã màu là điểm dừng màu)
+        + elip: là mặc định
+        + circle
+*/
+.box {
+    width: 500px;
+    height: 500px;
+    margin: 30px;
+    border-radius: 50%;
+    /* background: linear-gradient(to left, red 20%, green 50%, blue 80%); */
+    background: radial-gradient(red 20%, green 50%, blue 80%);
+}

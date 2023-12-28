@@ -11,7 +11,8 @@
         + skewX
         + skewY
     - di chuyển
-   
+        + translate(x, y)
+
 */
 .wrap {
     width: 200px;
@@ -35,6 +36,6 @@
 .wrap:hover .box {
     /* transform: rotateX(3600deg) rotateY(3600deg); */
     /* transform: rotate(3600deg) scale(2); */
-    transform: skew(91deg);
+    /* transform: skew(90deg); */
     scale: 1.5;
 }

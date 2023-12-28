@@ -1,0 +1,24 @@
+/*  1. Biến toàn cục (global variable): sử dụng ở bất kì selector nào 
+    2. Biến cục bộ (local variable) chỉ sử dụng trong selector nào đó và chỉ trong các selector con, khai báo ở selector cụ thể
+*/
+
+:root {
+    --primary-color: green;
+    --secondary-color: red;
+}
+.box .content {
+    --primary-color: blue;
+    /* color: var(--primary-color); */
+}
+.box .content h1 {
+    color: var(--primary-color);
+}
+.box .content h2 {
+    color: var(--secondary-color);
+}
+.box .content h2:hover {
+    --secondary-color: blueviolet;
+}
+.box h3 {
+    color: var(--primary-color);
+}

@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*  box-shadow: đổ bóng khối
+    box-shadow:
+        + none
+        + h-offset
+        + v-offset
+        + blur
+        + spread
+        + color
+    text-shadow: đổ bóng chữ
+    text-shadow: 
+        + none
+        + h-offset
+        + v-offset
+        + blur
+        + spread
+*/
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 30px 30px;
+    background: green;
+    box-shadow: -5px 5px 5px 0px red, 5px -5px 10px 5px yellow;
+}
+.content h1 {
+    color: white;
+    text-shadow: 2px 2px 1px black, 2px 2px 1px black,2px 2px 1px black, 2px 2px 1px black,2px 2px 1px black, 2px 2px 1px black,2px 2px 1px black, 2px 2px 1px black;
+    /* text-shadow: 3px 3px black, -3px -3px black, 3px -3px black, -3px 3px black; */
+}
+.content h2 {
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 5px 5px black, -5px -5px black, 5px -5px black, -5px 5px black;
+    font-size: 400px;
+}
