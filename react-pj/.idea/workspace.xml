@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e278a801-f13d-4267-a30c-1a97a07c9cfc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bai tren lop/b10-transform/ex01.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai tren lop/b10-transform/ex01.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../F8-FT-k5/BVN-no16/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../F8-FT-k5/BVN-no16/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scss_structure/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../scss_structure/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scss_structure/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../scss_structure/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -19,20 +28,24 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2aAyweIaW8n593EpZojPmE7JX83" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/F8-PJ-Fullstack-offline/react-pj",
+    "last_opened_file_path": "D:/work/nuxt2-person",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1703775917746</updated>
       <workItem from="1703775918814" duration="2035000" />
+      <workItem from="1704488185146" duration="385000" />
+      <workItem from="1705715152174" duration="38000" />
     </task>
     <servers />
   </component>

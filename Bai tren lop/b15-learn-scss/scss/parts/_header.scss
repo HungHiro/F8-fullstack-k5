@@ -1,0 +1,48 @@
+header {
+    $isTopbar: false;
+    $isTopbar: true;
+    @if $isTopbar == true {
+        .topbar {
+            color: red;
+        }
+    } @else {
+        .auth-link {
+            color: green
+        }
+    }
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        color: $primaryColor;
+        text: {
+            decoration: none;
+            align: center;
+        }
+        nav {
+            &.menu {
+                display: flex;
+                font-size: var(--font-size);
+                > li {
+                    a {
+                        display: block;
+                        &:hover {
+                            color: red;
+                            &::before {
+                                content: '';
+                                background-color: aqua;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .logo {
+            padding: 10px;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

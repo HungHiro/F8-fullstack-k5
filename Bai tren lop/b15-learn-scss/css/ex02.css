@@ -1,0 +1,24 @@
+.column-small {
+  width: 40px;
+}
+
+.column-regular {
+  width: 60px;
+}
+
+.column-large {
+  width: 80px;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .box {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=ex02.css.map */

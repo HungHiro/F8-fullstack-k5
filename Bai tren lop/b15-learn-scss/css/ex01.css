@@ -1,0 +1,71 @@
+/* comment */
+:root {
+  --font-size: 12px;
+}
+
+header .topbar {
+  color: red;
+}
+header .header-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  color: blue;
+  text-decoration: none;
+  text-align: center;
+}
+header .header-inner nav.menu {
+  display: flex;
+  font-size: var(--font-size);
+}
+header .header-inner nav.menu > li a {
+  display: block;
+}
+header .header-inner nav.menu > li a:hover {
+  color: red;
+}
+header .header-inner nav.menu > li a:hover::before {
+  content: "";
+  background-color: aqua;
+}
+header .header-inner .logo {
+  padding: 10px;
+}
+header .header-inner .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer .box {
+  color: rebeccapurple;
+}
+
+/* %section-base {
+    padding: 30px;
+    background: grey;
+} */
+.posts {
+  box-shadow: 5px 5px 10px #ccc;
+  padding: 30px;
+  background: grey;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.posts .container {
+  box-shadow: #ccc;
+}
+
+.products {
+  border-radius: 20px;
+  padding: 30px;
+  background: grey;
+  display: flex;
+}
+.products .inner {
+  max-width: 500px;
+}
+.products .container {
+  box-shadow: #ccc;
+}
+
+/*# sourceMappingURL=ex01.css.map */

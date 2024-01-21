@@ -1,0 +1,44 @@
+// comment trong scss
+/* comment */
+// cú pháp lồng: selector, thuộc tính (không nên dùng vì dễ rối) => vd:
+@import "parts/variable";
+@import "parts/header";
+@import "parts/footer";
+
+// placeholder: % + 'name' => dùng chung thuộc tính class mà éo cần tạo thêm 1 class k dùng đến => nối bằng @extend
+// mixin: nối bằng @include => hỗ trợ cú pháp lồng, có đối số
+@mixin section-base {
+    padding: 30px;
+    background: grey;
+}
+@mixin center ($width, $space: 0, $type: "margin") {
+    @if $type == "margin" {
+
+        max-width: $width;
+        margin: $space auto;
+    } @else if $type == "flex" {
+        display: flex;
+        .inner {
+            max-width: $width;
+        }
+    }
+    .container {
+        box-shadow: #ccc;
+    }
+}
+/* %section-base {
+    padding: 30px;
+    background: grey;
+} */
+.posts {
+    box-shadow: 5px 5px 10px #ccc;
+    @include section-base;
+    @include center(1000px);
+    // @extend %section-base;
+}
+.products {
+    border-radius: 20px;
+    // @extend %section-base;    
+    @include section-base;
+    @include center(500px, 30px, "flex");
+}

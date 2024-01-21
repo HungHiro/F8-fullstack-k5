@@ -1,0 +1,61 @@
+@media screen and (max-width: 1199px) {
+    section {
+        max-width: 1140px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .btn-order {
+        width: calc(100%/3);
+    }
+}
+@media screen and (max-width: 991px) {
+    section {
+        max-width: 960px;
+    }
+    .btn-order {
+        width: 41.66667%;
+    }
+    .ship-slogan button {
+        width: 58.3333%;
+    }
+    .col-right {
+        z-index: -1;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        translate: -50%;
+    }
+    .nav-bar-content ul {
+        flex-direction: column;
+    }
+    .toggle-btn {
+        display: block;
+    }
+}
+@media screen and (max-width: 767px) {
+    section {
+        max-width: 720px;
+    }
+    .btn-order {
+        width: 25%;
+    }
+    .ship-slogan button {
+        width: 33.3333%;
+    }
+}
+@media screen and (max-width: 575px) {
+    section {
+        max-width: 540px;
+    }
+    .btn-order {
+        width: 33.3333%;
+    }
+    .ship-slogan button {
+        width: 41.66667%;
+    }
+}
