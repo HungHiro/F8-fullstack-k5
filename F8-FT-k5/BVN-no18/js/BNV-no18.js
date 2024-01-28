@@ -64,7 +64,8 @@ var count4 = 0, b4 = a4 / 2;
 console.log(`Số nguyên cần kiểm tra là: ${a4}`);
 for (let i = 2; i < b4; i++) {
     if (a4 % i === 0) {
-        count4 ++;
+        count4 ++;   
+        break;
     }
 }
 if (count4 > 0) {
