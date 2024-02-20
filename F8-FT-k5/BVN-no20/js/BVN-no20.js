@@ -8,11 +8,6 @@ let a = 0;
 function setColorParagraph() {
     let arrContent = arrWords.map((word, index) => {
         return index === a ? `<span class="highlight">${word}</span>` : `<span class="default">${word}</span>`;
-        // if (index === a) {
-        //     return `<span class="highlight">${word}</span>`
-        // } else {
-        //     return `<span class="default">${word}</span>`
-        // }
     }).join(" ");
     getParagraph.innerHTML = arrContent;
     a++;

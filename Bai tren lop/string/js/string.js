@@ -26,7 +26,7 @@ console.log(Object.prototype);
 console.log(String.prototype);
 
 // length: Lấy độ dài chuỗi
-var a = "cai qq jz qq";
+var a = "cai qq jz qq  ";
 console.log(a.length);
 
 // charAt(): Lấy kí tự theo index (Bắt đầu từ 0)
@@ -39,7 +39,7 @@ console.log(a.charCodeAt(2));
 var b = "hehehe"
 console.log(a.concat(" ", b));
 
-// incledes() --> Tìm chuỗi con trong chuỗi cha --> trả về true/false
+// includes() --> Tìm chuỗi con trong chuỗi cha --> trả về true/false
 console.log(a.includes("qq"));
 
 // indexOf() --> Tìm chuỗi con trong chuỗi cha --> trả về index đầu tiên tìm đc (Không tìm đc thì trả về "-1")
@@ -60,3 +60,66 @@ console.log(a.replace("qq", "3"))
 // replace() --> Thay thế all từ khóa này = từ khóa #
 console.log(a.replaceAll("qq", "3"))
 // Hàm replace có hỗ trợ thay thế = biểu thức chính quy
+
+// Hàm split(" ") --> cắt chuỗi thành mảng dựa vào ký tự phân tách
+// vd:
+console.log(a.split(" "));
+
+// Hàm toUpperCase() --> chuyển tất cả thành chữ hoa
+console.log(a.toUpperCase());
+
+// Hàm toLowerCase( --> chuyển tất cả thành chữ thường)
+console.log(a.toLowerCase());
+
+// trim() --> cắt khoảng trắng cả đầu và cuối chuỗi
+console.log(a.trim());
+
+// trimStart(), trimLeft() --> cắt khoảng trắng đầu chuỗi 
+
+// trimEnd(), trimRight() --> cắt khoảng trắng cuối chuỗi
+
+// match() --> cắt chuỗi bằng biểu thức chính quy
+var content = `Xin chào, 001839023 f88 293991938`;
+var phone = content.match(/0\d{9}/g);
+console.log(phone);
+
+// Bài tập: Cho 1 email, lấy Username của Email đó
+var email = `hoangan.web@gmail.com`;
+var username = email.slice(0, email.indexOf('@'));
+console.log(username);
+
+// B2: Kiểm tra 1 chuỗi xem chuỗi đó có phải tất cả kí tự đó có viết hoa k
+var fullname = `NGUYỄN TUẤN HÙNG`;
+var compare = fullname.toUpperCase();
+fullname === compare ? console.log(`a1`) : console.log(`b`);
+if (fullname === compare) {
+    console.log(`a`);
+} else (console.log(`b`))
+
+// B3 Đảo chữ đầu và cuối của 1 chuỗi;
+var str = `Xin chào, tôi tên là Nguyễn Tuấn Hùng`
+// output: Hùng chào, tôi tên là Nguyễn Tuấn Xin
+var firstSpace = str.indexOf(" ");
+var lastSpace = str.lastIndexOf(" ");
+var firstWord = str.slice(0, firstSpace);
+var lastWord = str.slice(lastSpace);
+var middleWord = str.slice(firstSpace, lastSpace + 1)
+console.log(`${lastWord}${middleWord}${firstWord}`);
+
+// b4:
+var output = "";
+var keyword = `lorem`;
+var content = `Lorem ipsum dolor sit amet consecloremtetur adipisicing elit. Hic asperiores velit aut rem saepe voluptas quis fuga sint at, accusamus a libero consequatur enim magni quibusdam maiores quod ea placeat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores velit aut rem saepe voluptas quis fuga sint at, accusamus a libero consequatur enim magni quibusdam maiores quod ea placeat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores velit aut rem saepe voluptas quis fuga sint at, accusamus a libero consequatur enim magni quibusdam maiores quod ea placeat!`;
+var a4 = 0, b4 = 0;
+while (true) {
+    var position = content.indexOf(keyword.toLowerCase, a4);
+    if (position === -1) {
+        break;
+    }
+        output = content.slice(a4, position) + `<span>${content.slice(position, position + keyword.length)}</span>` + content.slice(position + keyword.length);
+        a4 = position + keyword.length;//0 + 3 = 3
+        b4++;
+}
+document.write(`<p>Tìm kiếm với từ khóa, <b>${keyword}</b></p>`);
+document.write(content);
+document.write(`<p>Đã tìm thấy <b> ${b4} </b> kết quả với từ khóa <b>${keyword}</b></p>`);
