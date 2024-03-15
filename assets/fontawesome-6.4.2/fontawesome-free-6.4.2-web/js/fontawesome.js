@@ -1305,7 +1305,7 @@
         callProvided('pseudoElements2svg', params);
         return callProvided('i2svg', params);
       } else {
-        return Promise.reject('Operation requires a DOM of some kind.');
+        return Promise.reject('Operation requires a js of some kind.');
       }
     },
     watch: function watch() {
